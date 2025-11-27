@@ -2,10 +2,11 @@ import mysql.connector
 
 def connect_db():
     return mysql.connector.connect(
-        host="localhost",
+        host="mysql://root:gZkgsfdkBkSneYweXvProehpisDVmvDM@caboose.proxy.rlwy.net:25506/railway",
         user="root",
-        password="",      
-        database="library_db"
+        password="gZkgsfdkBkSneYweXvProehpisDVmvDM",      
+        database="railway",
+        port=3306
     )
 
 # ---------------------- MAIN MENU ----------------------
@@ -168,3 +169,4 @@ def show_available_books():
     print()
 
 main()
+
